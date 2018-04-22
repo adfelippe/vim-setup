@@ -16,8 +16,8 @@ cp vimrc ${HOME}/.vimrc
 # Copy bundle packages to vim bundle folder
 cp -R bundle/* ${HOME}/.vim/bundle
 
-# Copy all available color themes to color folder
-cp -R color/ ${HOME}/.vim/
+# Copy all available colors themes to color folder
+cp -R colors/ ${HOME}/.vim/
 
 # Install cscope and ctags on a Debian-based distro
 sudo apt install cscope exuberant-ctags
