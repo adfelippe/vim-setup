@@ -16,6 +16,8 @@ set autoindent			"Set autoidentation
 set cindent			"Set autoidentation for C code blocks
 set nocompatible
 set number
+set t_BE=
+set pastetoggle=<F2>
 
 syntax enable
 colorscheme monokai
@@ -23,5 +25,5 @@ colorscheme monokai
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 3
-let g:netrw_winsize = 20
+let g:netrw_winsize = 17
 autocmd VimEnter * :Vexplore
