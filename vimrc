@@ -15,9 +15,10 @@ set noexpandtab
 set autoindent			"Set autoidentation
 set cindent			"Set autoidentation for C code blocks
 set nocompatible
-set number
-set t_BE=			"Fix unwanted ~0 and ~1 characters on shell with Vim 8"
-set pastetoggle=<F2>		"Set paste toggle function to F2"
+set tw=80			"Limit text width to 80 characters
+"set number
+set t_BE=
+set pastetoggle=<F2>
 
 syntax enable
 colorscheme monokai
@@ -25,5 +26,5 @@ colorscheme monokai
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 3
-let g:netrw_winsize = 18
+let g:netrw_winsize = 17
 autocmd VimEnter * :Vexplore
