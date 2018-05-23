@@ -88,15 +88,27 @@ if has("cscope")
     " go back to where you were before the search.  
     "
 
-    nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>	
-    nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-    nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-c>s :cs find s <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-c>g :cs find g <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-c>c :cs find c <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-c>t :cs find t <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-c>e :cs find e <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-c>f :cs find f <C-R>=expand("<cfile>")<CR><CR>	
+    nmap <C-c>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+    nmap <C-c>d :cs find d <C-R>=expand("<cword>")<CR><CR>	
 
+    " This type of search will open the search result in a new tab
+    " instead of the current window. You can also use CTRL-T to go
+    " back to the previous window.
+
+    nmap <C-c><C-c>s :tab cs find s <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-c><C-c>g :tab cs find g <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-c><C-c>c :tab cs find c <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-c><C-c>t :tab cs find t <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-c><C-c>e :tab cs find e <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-c><C-c>f :tab cs find f <C-R>=expand("<cfile>")<CR><CR>	
+    nmap <C-c><C-c>i :tab cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+    nmap <C-c><C-c>d :tab cs find d <C-R>=expand("<cword>")<CR><CR>	
 
     " Using 'CTRL-spacebar' (intepreted as CTRL-@ by vim) then a search type
     " makes the vim window split horizontally, with search result displayed in
