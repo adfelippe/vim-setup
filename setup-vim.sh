@@ -3,7 +3,9 @@
 # Small script to easily setup vim using my themes and packages of choice
 
 set -eux
-# First off, let's install pathogen to make it easy to install plugins and
+# First off, we'll try to install curl as it may not be available
+sudo apt install curl
+# Let's install pathogen to make it easy to install plugins and
 # runtime files in their own private directories.
 mkdir -p ${HOME}/.vim/autoload ${HOME}/.vim/bundle && \
 	curl -LSso ${HOME}/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
