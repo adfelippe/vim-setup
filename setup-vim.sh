@@ -15,5 +15,7 @@ cp vimrc ${HOME}/.vimrc
 cp -R bundle/* ${HOME}/.vim/bundle
 # Copy all available colors themes to color folder
 cp -R colors/ ${HOME}/.vim/
+# Create tmp folder to store swap and backup files
+mkdir ~/.vimrc/tmp
 # Install cscope and ctags on a Debian-based distro
 sudo apt install cscope exuberant-ctags

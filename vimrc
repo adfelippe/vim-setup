@@ -15,10 +15,13 @@ set noexpandtab
 set autoindent			"Set autoidentation
 set cindent			"Set autoidentation for C code blocks
 set nocompatible
-set tw=80			"Limit text width to 80 characters
+"set tw=80			"Limit text width to 80 characters
 "set number
 set t_BE=
 set pastetoggle=<F2>
+set backupdir=$HOME/.vim/tmp//	"Store backup and swap files in temporary folder
+set directory=$HOME/.vim/tmp//
+set undodir=$HOME/.vim/tmp//
 
 syntax enable
 colorscheme monokai
